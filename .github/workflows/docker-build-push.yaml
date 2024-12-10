@@ -42,7 +42,7 @@ jobs:
         uses: docker/login-action@v3
         with:
           username: ${{ vars.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          password: ${{ secrets.DOCKER_TOKEN }}
 
       # Step 5: Extract metadata for Docker image tagging and labeling
       - name: Extract metadata for Docker
