@@ -56,6 +56,7 @@ jobs:
             type=semver,pattern={{major}}
             type=raw,value=latest,enable=${{ github.ref == format('refs/heads/{0}', 'master') }}
             type=sha,prefix={{branch}}-
+          labels: ""
 
       # Step 6: Build and push the Docker image
       - name: Build and push Docker image
